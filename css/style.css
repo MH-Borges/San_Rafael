@@ -1,0 +1,677 @@
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Bold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Extrabold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Heavy.woff2") format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Blacker Sans Pro";
+  src: url("../font/BlackerSansPro-Black.woff2") format("woff2");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Exotc350 DMbd";
+  src: url("../font/EXO350DB.ttf") format("truetype");
+  font-weight: 400;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313538;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  opacity: 0 !important;
+  display: none !important;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
+}
+
+.modal {
+  --bs-modal-width: auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background: #CDCDCD;
+  overflow-x: hidden;
+  position: relative;
+}
+body main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+body main .whats_link {
+  position: fixed;
+  bottom: 2vh;
+  right: 1vw;
+  width: 4.5vw;
+  height: 4.5vw;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+  z-index: 999;
+}
+body main .whats_link img, body main .whats_link svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 1px 2px #313538);
+}
+body main #background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+body main section {
+  width: 90%;
+  height: 100vh;
+}
+body main .btn {
+  position: absolute;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.15vw;
+  color: #FFFFFF;
+  padding: 0.35vh 1.25vw;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main .btn:hover {
+  transform: scale(1.05);
+  color: #FFFFFF;
+}
+body main #banner {
+  position: relative;
+  z-index: 10;
+}
+body main #banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -6%;
+  width: 40vw;
+  height: 100vh;
+  background-color: #313538;
+  opacity: 0.25;
+}
+body main #banner #Bg_home {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 112%;
+  height: 100%;
+  z-index: -1;
+}
+body main #banner #logo {
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  width: 10vw;
+  height: auto;
+}
+body main #banner .banner_Block {
+  margin-left: auto;
+  position: relative;
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main #banner .banner_Block h2 {
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 2.75vw;
+  line-height: 8vh;
+  color: #FFFFFF;
+  margin-left: 3vw;
+  margin-top: 27vh;
+}
+body main #banner .banner_Block .Btn_banner {
+  background: #313538;
+  bottom: 27vh;
+  left: 3vw;
+}
+body main #condominio {
+  display: flex;
+  position: relative;
+  padding-top: 7.5vh;
+  z-index: 10;
+}
+body main #condominio .menu {
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 102vw;
+  height: 7vh;
+  padding: 1vh 5% 1vh 6%;
+  background: #FFFFFF;
+  box-shadow: 0 0px 10px #313538;
+  z-index: 999 !important;
+}
+body main #condominio .menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+body main #condominio .menu ul li {
+  width: 17%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #313538;
+  border-right: 1px solid #313538;
+  position: relative;
+}
+body main #condominio .menu ul li:first-child {
+  border-left: none;
+}
+body main #condominio .menu ul li:last-child {
+  border-right: none;
+}
+body main #condominio .menu ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #313538;
+  letter-spacing: 0.05vw;
+}
+body main #condominio .menu ul li a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #313538;
+  z-index: -1;
+  opacity: 0.1;
+}
+body main #condominio .fixed {
+  position: fixed;
+  left: 0;
+  padding: 1vh 5%;
+  background: #FFFFFF;
+  z-index: 999 !important;
+}
+body main #condominio .block_imgCond {
+  width: 42%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+body main #condominio .block_imgCond img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-top-right-radius: 7.5vw;
+  border-bottom-left-radius: 7.5vw;
+  margin-top: 7.5vh;
+}
+body main #condominio .block_imgCond .btn_cond {
+  background: #313538;
+  bottom: 6vh;
+  right: 0;
+}
+body main #condominio .cond_block {
+  width: 58%;
+  height: 100%;
+  z-index: 2;
+  padding-left: 4vw;
+}
+body main #condominio .cond_block p {
+  margin-top: 7.5vh;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1.15vw;
+  color: #0A0A0A;
+}
+body main #condominio .cond_block #San_Rafael {
+  width: auto;
+  height: 13.5vh;
+  margin-top: 1vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main #condominio .cond_block h3 {
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.4vw;
+  color: #0A0A0A;
+  margin-top: 3vh;
+}
+body main #condominio .cond_block h4 {
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.4vw;
+  color: #0A0A0A;
+  display: flex;
+  align-items: center;
+  margin-top: 2.5vh;
+}
+body main #condominio .cond_block h4 img, body main #condominio .cond_block h4 svg {
+  margin-right: 1vw;
+}
+body main #condominio .cond_block h4 img path, body main #condominio .cond_block h4 svg path {
+  fill: #0A0A0A;
+}
+body main #condominio .cond_block ul {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5vh;
+  padding-right: 5vw;
+}
+body main #condominio .cond_block ul li {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #313538;
+  border-right: 1px solid #313538;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.25vw;
+  color: #313538;
+  letter-spacing: 0.1vw;
+}
+body main #condominio .cond_block ul li:first-child {
+  border-left: none;
+}
+body main #condominio .cond_block ul li:last-child {
+  border-right: none;
+}
+body main #condominio .cond_block h5 {
+  margin-top: 4vh;
+  padding-right: 3.5vw;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1vw;
+  color: #313538;
+  line-height: 2.75vh;
+}
+body main #condominio .cond_block h5 b {
+  font-weight: 800;
+}
+body main #condominio .cond_block h5 i {
+  font-size: 0.9vw;
+}
+body main #plantas {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  outline: 1px solid greenyellow;
+}
+body main #plantas h2 {
+  width: 100%;
+  height: 10vh;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #313538;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+body main #plantas .nav-pills {
+  width: 25%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  padding-bottom: 15vh;
+  position: relative;
+  z-index: 2;
+}
+body main #plantas .nav-pills a {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  margin: 0.5vh 0;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1vw;
+  color: #313538;
+  border: 2px solid #313538;
+  border-radius: 5vw;
+  padding: 0.5vh 0;
+  letter-spacing: 0.15vw;
+  position: relative;
+}
+body main #plantas .nav-pills a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #313538;
+  z-index: -1;
+  opacity: 0.075;
+  border-radius: 5vw;
+}
+body main #plantas .nav-pills .active {
+  background: #313538;
+  color: #FFFFFF;
+}
+body main #plantas .tab-content {
+  width: 75%;
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+}
+body main #plantas .tab-content .infos_plantas {
+  position: absolute;
+  bottom: 8vh;
+  left: -22.5vw;
+  width: 35vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+}
+body main #plantas .tab-content .infos_plantas h3 {
+  width: 100%;
+  height: 35%;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  letter-spacing: 0.3vw;
+  color: #313538;
+  display: flex;
+  align-items: center;
+}
+body main #plantas .tab-content .infos_plantas ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 2vw;
+}
+body main #plantas .tab-content .infos_plantas ul li {
+  height: 33.3%;
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  position: relative;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 500;
+  font-size: 0.9vw;
+  color: #313538;
+  letter-spacing: 0.1vw;
+}
+body main #plantas .tab-content .infos_plantas ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.15vw;
+  width: 0.25vw;
+  height: 0.25vw;
+  background: #313538;
+  border-radius: 50%;
+}
+body main #plantas .tab-content .espaco_planta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body main #plantas .tab-content .espaco_planta h4 {
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 6.5vw;
+  color: #FFFFFF;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  padding-right: 2vw;
+}
+body main #plantas .tab-content .espaco_planta h4 span {
+  font-weight: 300;
+  margin-left: 1.5vw;
+}
+body main #plantas .tab-content .espaco_planta h4::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 50vh;
+  z-index: -1;
+  background: #313538;
+  border-bottom-right-radius: 10vw;
+}
+body main #plantas .tab-content .espaco_planta img {
+  margin: 4vh 5vw 0 auto;
+  width: 56vw;
+  height: auto;
+}
+body main #plantas .tab-content .espaco_planta .btn {
+  margin: 12vh 5vw 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 5vh;
+  width: 17vw;
+  background-color: #313538;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 900;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s ease-in-out all;
+  border-radius: 0.5vw;
+}
+body main #plantas .tab-content .espaco_planta .btn:hover {
+  transform: translateY(-5px);
+  font-size: 1.65vw;
+}
+body main #plantas .tab-content .espaco_planta #overviewIMG {
+  all: unset;
+  position: absolute;
+  width: 32%;
+  height: auto;
+  right: 100%;
+  top: 35%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog, body main #plantas #C3_Quartos_Modal .modal-dialog {
+  width: 75vw;
+  height: 90%;
+  margin: 2.5% auto;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: none;
+  position: relative;
+  border: none;
+  z-index: 999 !important;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close {
+  position: absolute;
+  top: -3vh;
+  right: -4vw;
+  width: 3vw;
+  height: 3vw;
+  background: none;
+  border: none;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::before, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::after, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::before, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::after {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: #FFFFFF;
+  border-radius: 5vw;
+  transform: rotate(45deg);
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-close::after, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-close::after {
+  transform: rotate(-45deg);
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body p {
+  position: absolute;
+  bottom: -5vh;
+  left: -11vw;
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  z-index: 99;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators {
+  height: 0.75vh;
+  align-items: center;
+  overflow: hidden;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-indicators button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-indicators button {
+  background: #FFFFFF;
+  width: 2.5vw;
+  height: 0.5vh;
+  margin: 0 0.25vw;
+  border-radius: 10vw;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item img, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item img, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-inner .carousel-item img, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button {
+  width: 10%;
+  height: 75%;
+  margin: auto 0;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 button .carousel-control-next-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-prev-icon, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 button .carousel-control-next-icon {
+  width: 4vw;
+  height: 8vh;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-prev, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-prev {
+  left: -7.5vw;
+}
+body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C2_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC2 .carousel-control-next, body main #plantas #C3_Quartos_Modal .modal-dialog .modal-content .modal-body #IndicatorsC3 .carousel-control-next {
+  right: -7.5vw;
+}
+body footer {
+  bottom: 0;
+  left: 5%;
+  position: absolute;
+  width: 90%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer p {
+  font-family: "Blacker Sans Pro", sans-serif;
+  font-weight: 800;
+  font-size: 0.9vw;
+  color: #FFFFFF;
+}
+body footer a {
+  width: 7.5vw;
+  height: 65%;
+}
+body footer a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+/* MOBILE *//*# sourceMappingURL=style.css.map */

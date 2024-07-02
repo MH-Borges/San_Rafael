@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Light.woff2') format('woff2');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Bold.woff2') format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Extrabold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Heavy.woff2') format('woff2');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Blacker Sans Pro';
+    src: url('../font/BlackerSansPro-Black.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Exotc350 DMbd';
+    src: url('../font/EXO350DB.ttf') format('truetype');
+    font-weight: 400;
+}
+
+
+$Main-font: 'Blacker Sans Pro', sans-serif;
+$Second-font: 'Exotc350 DMbd', sans-serif;
+
+////// Blacker Sans Pro pesos
+// Light = 300
+// Regular = 400
+// Bold = 600
+// Extra-Bold = 700
+// Heavy = 800
+// Black = 900
+
+/////// Exotc350 DMbd pesos
+// Regular = 400
+
+
+$Branco: #FFFFFF;
+$Cinzinha: #CDCDCD;
+$Cinza: #313538;
+$Preto: #0A0A0A;
