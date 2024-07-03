@@ -4,10 +4,30 @@ document.addEventListener( 'DOMContentLoaded', function() {
     document.getElementById("data_footer").textContent = new Date().getFullYear();
 
     //galeria
-    new Splide( '.splide', {
-        perPage: 2,
-        focus  : 0
-    }).mount();
+    var main = new Splide( '#main-carousel', {
+        type      : 'fade',
+        rewind    : true,
+        pagination: false,
+        arrows    : false,
+    });
+    var thumbnails = new Splide( '#thumbnail-carousel', {
+        fixedWidth  : 135,
+        fixedHeight : 80,
+        gap         : 15,
+        rewind      : true,
+        pagination  : false,
+        isNavigation: true,
+        breakpoints : {
+            600: {
+            fixedWidth : 60,
+            fixedHeight: 44,
+            },
+        },
+    });
+    main.sync( thumbnails );
+    main.mount();
+    thumbnails.mount();
+
 
     //relogio
     var dateString = "2026/12/15";
