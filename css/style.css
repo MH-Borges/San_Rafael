@@ -907,7 +907,7 @@ body main #contato {
   position: relative;
   display: flex;
   align-items: center;
-  z-index: 2;
+  z-index: 5;
 }
 body main #contato #Banner_contato {
   position: absolute;
@@ -931,7 +931,7 @@ body main #contato h3 {
 body main #contato .form_block {
   margin-left: auto;
   width: 38%;
-  height: 80%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   background-color: #313538;
@@ -943,9 +943,8 @@ body main #contato .form_block {
 body main #contato .form_block h2 {
   width: 100%;
   height: 15%;
-  font-family: "Blacker Sans Pro", sans-serif;
-  font-weight: 900;
-  font-size: 1.5vw;
+  font-family: "Exotc350 DMbd", sans-serif;
+  font-size: 2.5vw;
   color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -957,6 +956,7 @@ body main #contato .form_block form {
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 body main #contato .form_block form .BlockBox {
   width: 100%;
@@ -1069,7 +1069,7 @@ body main #contato .form_block form .seletor #options {
   height: auto;
   max-height: 40vh;
   top: 6.75vh;
-  background: #313538;
+  background: #CDCDCD;
   display: none;
   position: absolute;
   padding: 1vh 1vw;
@@ -1082,7 +1082,7 @@ body main #contato .form_block form .seletor #options .option {
   position: relative;
   width: 100%;
   height: 5vh;
-  border-bottom: 1px solid #CDCDCD;
+  border-bottom: 1px solid #313538;
 }
 body main #contato .form_block form .seletor #options .option span {
   all: unset;
@@ -1097,7 +1097,7 @@ body main #contato .form_block form .seletor #options .option span {
   font-family: "Blacker Sans Pro", sans-serif;
   font-weight: 800;
   font-size: 1vw;
-  color: #FFFFFF;
+  color: #0A0A0A;
   z-index: 5;
 }
 body main #contato .form_block form .seletor #options .option input[type=radio] {
@@ -1111,7 +1111,7 @@ body main #contato .form_block form .seletor #options .option:hover::before {
   position: absolute;
   inset: 0;
   background: #313538;
-  opacity: 0.5;
+  opacity: 0.25;
   z-index: -1;
 }
 body main #contato .form_block form .seletor #options .option:last-child {
@@ -1123,27 +1123,10 @@ body main #contato .form_block form .seletor #options_btn:checked + #select-butt
 body main #contato .form_block form .seletor #select:has(#options_btn:checked) + #options {
   display: block;
 }
-body main #contato .form_block form .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 5vh;
-  width: 14vw;
-  margin-left: auto;
-  margin-top: 3vh;
-  background-color: #313538;
-  font-family: "Blacker Sans Pro", sans-serif;
-  font-weight: 900;
-  font-size: 1.1vw;
-  color: #FFFFFF;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transition: 0.3s ease-in-out all;
-  border-radius: 0.5vw;
-}
-body main #contato .form_block form .btn:hover {
-  transform: translateY(-5px);
-  font-size: 1.25vw;
+body main #contato .form_block form .btn_form {
+  background: #FFFFFF;
+  bottom: 3vh;
+  color: #0A0A0A;
 }
 body main #contato .form_block #msg_form {
   position: absolute;
@@ -1181,43 +1164,27 @@ body main #whats::before {
 body main #whats h2, body main #whats h3 {
   width: 100%;
   height: 8vh;
-  font-family: "Blacker Sans Pro", sans-serif;
-  font-weight: 800;
-  font-size: 3.25vw;
+  font-family: "Exotc350 DMbd", sans-serif;
+  font-size: 3vw;
   color: #FFFFFF;
-  margin-top: 6vh;
+  margin-top: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body main #whats h3 {
+  font-family: "Blacker Sans Pro", sans-serif;
   height: auto;
-  font-size: 2vw;
+  font-size: 1.25vw;
   color: #FFFFFF;
   font-weight: 300;
   padding: 1vh 0;
   margin-top: 1.5vh;
 }
-body main #whats .btn {
-  margin-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 5vh;
-  width: 17vw;
-  background-color: #FFFFFF;
-  font-family: "Blacker Sans Pro", sans-serif;
-  font-weight: 900;
-  font-size: 1.1vw;
-  color: #FFFFFF;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  transition: 0.3s ease-in-out all;
-  border-radius: 0.5vw;
-}
-body main #whats .btn:hover {
-  transform: translateY(-5px);
-  font-size: 1.25vw;
+body main #whats .Btn_contato {
+  background: #FFFFFF;
+  bottom: 15vh;
+  color: #0A0A0A;
 }
 body footer {
   z-index: 10;
@@ -1229,12 +1196,12 @@ body footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid #FFFFFF;
+  border-top: 3px solid #FFFFFF;
 }
 body footer p {
   font-family: "Blacker Sans Pro", sans-serif;
-  font-weight: 800;
-  font-size: 0.9vw;
+  font-weight: 600;
+  font-size: 0.8vw;
   color: #FFFFFF;
 }
 body footer a {

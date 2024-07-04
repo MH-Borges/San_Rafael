@@ -17,8 +17,12 @@
         exit();
     }
 
-    if($planta == 'C2'){  $planta = "Casa com 2 quartos"; }
-    if($planta == 'C3'){  $planta = "Casa com 3 quartos"; }
+    if($planta == 'unidade104'){  $planta = "Unidade 104"; }
+    if($planta == 'unidade108'){  $planta = "Unidade 108"; }
+    if($planta == 'Unidade203'){  $planta = "Unidades 203 / 303 / 403"; }
+    if($planta == 'Unidade204'){  $planta = "Unidades 204 / 304 / 404"; }
+    if($planta == 'Unidade206'){  $planta = "Unidades 206 / 306 / 406"; }
+
 
     $mensagem = 'Tenho interesse na '.$planta;  
 
