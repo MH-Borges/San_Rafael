@@ -2,6 +2,8 @@
 @import 'base';
 
 .modal{ --bs-modal-width: auto; }
+.modal-backdrop{ opacity: 0.9 !important; }
+
 
 body {
     display: flex;
@@ -111,11 +113,11 @@ body {
                     line-height: 8vh;
                     color: $Branco;
                     margin-left: 3vw;
-                    margin-top: 27vh;
+                    margin-top: 20vh;
                 }
                 .Btn_banner{
                     background: $Cinza;
-                    bottom: 27vh;
+                    bottom: 25vh;
                     left: 3vw;
                 }
             }
@@ -288,6 +290,7 @@ body {
         }
         #plantas{
             display: flex;
+            height: 110vh;
             flex-direction: column;
             position: relative;
             h2{
@@ -416,7 +419,7 @@ body {
                     }
                     .btn_plantas{
                         background: $Cinza;
-                        bottom: 2vh;
+                        bottom: -2vh;
                     }
                 }
                 
@@ -556,9 +559,9 @@ body {
                 font-family: $Main-font;
                 color: $Branco;
                 font-weight: 300;
-                font-size: 0.9vw;
+                font-size: 1.1vw;
                 line-height: 3vh;
-                padding: 0.5vh 8vw;
+                padding: 0.5vh 4vw;
             }
             #main-carousel{
                 width: 75%;
@@ -711,7 +714,7 @@ body {
                         font-weight: 300;
                         font-size: 0.75vw;
                         color: $Branco;
-                        padding: 1vh 2.5vw;
+                        padding: 1vh 2vw;
                         text-align: center;
                     }
                 }
@@ -825,8 +828,6 @@ body {
                 }
             }
         }
-
-
         #contato{
             height: 75vh;
             position: relative;
@@ -1074,8 +1075,6 @@ body {
             }
             
         }
-
-
         #whats{
             z-index: 2;
             height: 50vh;
@@ -1153,4 +1152,611 @@ body {
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 /* MOBILE */
 @media only screen and (max-width: 479px){
+    body {
+        main{
+            .whats_link{
+                bottom: 2vh;
+                right: 2vw;
+                width: 14vw;
+                height: 14vw;
+                padding: 3vw;
+            }
+            #background{
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+            section{
+                width: 90%;
+                height: 100vh; 
+            }
+            .btn{
+                font-size: 3.5vw;
+                padding: 0.75vh 2.5vw;
+                border-radius: 1.5vw;
+            }
+    
+            #banner{
+                &::before{
+                    width: 120%;
+                    opacity: 0.25;
+                }
+                #Bg_home{
+                    object-fit: cover;
+                }
+                #logo{
+                    width: 30vw;
+                }
+                .banner_Block{
+                    width: 90vw;
+                    height: 100vh;
+                    h2{
+                        font-size: 7.5vw;
+                        line-height: 8vh;
+                        margin: 0;
+                        margin-top: 25vh;
+                        padding: 0 1vw;
+                        text-align: center;
+                    }
+                    .Btn_banner{
+                        background: $Cinza;
+                        bottom: 20vh;
+                        left: auto;
+                    }
+                }
+            }
+            #condominio{
+                height: auto;
+                padding-top: 0;
+                flex-wrap: wrap;
+                padding-bottom: 10vh;
+                .menu{
+                    display: none;
+                }
+                .block_imgCond{
+                    width: 100%;
+                    height: 50vh;
+                    display: flex;
+                    align-items: flex-start;
+                    position: relative;
+                    img{
+                        border-top-right-radius: 7.5vw;
+                        border-bottom-left-radius: 7.5vw;
+                        margin-top: 5vh;
+                    }
+                    .btn_cond{
+                        bottom: -150vh;
+                        right: 30%;
+                    }
+                }
+
+                .cond_block{
+                    width: 100%;
+                    height: auto;
+                    padding-left: 0;
+                    p{
+                        margin-top: 2.5vh;
+                        font-size: 5vw;
+                        text-align: center;
+                    }
+                    #San_Rafael{
+                        width: 100%;
+                        height: auto;
+                        margin-top: 2vh;
+                    }
+                    h3{
+                        font-size: 4.5vw;
+                        margin-top: 3vh;
+                        text-align: center;
+                    }
+                    h4{
+                        font-size: 5vw;
+                        color: $Preto;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 3.5vh;
+                        img, svg{ margin-right: 5vw; }
+                    }
+                    ul{
+                        height: auto;
+                        flex-wrap: wrap;
+                        margin-top: 2.5vh;
+                        padding: 0;
+                        li{
+                            width: 50%;
+                            height: 6vh;
+                            border-top: 1px solid $Cinza;
+                            &:nth-child(1),&:nth-child(2){
+                                border-top: none;
+                                border-bottom: 1px solid $Cinza;
+                            }
+                            &:nth-child(2){ border-right: none; }
+                            &:nth-child(3){ border-left: none; }
+                            font-size: 5vw;
+                        }
+                    }
+                    h5{
+                        margin-top: 4vh;
+                        padding-right: 0;
+                        font-size: 5.5vw;
+                        line-height: 3.5vh;
+                        text-align: center;
+                        b{
+                            font-weight: 800;
+                        }
+                        i{
+                            font-size: 4.5vw;
+                        }
+                    }
+                }
+            }
+            #plantas{
+                height: auto;
+                padding-bottom: 7.5vh;
+                h2{
+                    margin-top: 7.5vh;
+                    width: 100%;
+                    height: auto;
+                    font-size: 12vw;
+                    padding-bottom: 0;
+                }
+                .nav-pills{
+                    height: auto;
+                    flex-wrap: wrap;
+                    margin-top: 2.5vh;
+                    a{
+                        width: 50%;
+                        height: 7.5vh;
+                        font-size: 4.5vw;
+                        text-align: center;
+                        margin: 0.5vh 0;
+                        &:first-child{ border-left: 1px solid $Cinza; }
+                        &:last-child{ border-right: 1px solid $Cinza; }
+                    }
+                }
+                .tab-content{
+                    height: auto;
+                    padding-bottom: 10vh;
+                    .tab-block{
+                        height: auto;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .espaco_planta{
+                            width: 100%;
+                            height: 40vh;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .infos_plantas{
+                            width: 100%;
+                            height: auto;
+                            padding-left: 0;
+                            h3{
+                                width: 100%;
+                                height: auto;
+                                font-size: 7vw;
+                                align-items: center;
+                                justify-content: center;
+                                padding-bottom: 0;
+                            }
+                            
+                            ul{
+                                height: auto;
+                                display: flex;
+                                padding-left: 0;
+                                margin-top: 1.5vh;
+                                li{
+                                    height: auto;
+                                    align-items: center;
+                                    justify-content: center;
+                                    font-size: 4vw;
+                                    padding-left: 0;
+                                    margin: 0.5vh 0;
+                                    &::before{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .btn_plantas{
+                            bottom: 0;
+                        }
+                    }
+                    
+                }
+                #Unidade104_Modal, #Unidade108_Modal, #Unidades203_303_403_Modal, #Unidades204_304_404_Modal, #Unidades206_306_406_Modal{
+                    .modal-dialog{
+                        width: 90vw;
+                        height: 55%;
+                        margin: 15% auto;
+                        .modal-content{
+                            .modal-close{
+                                position: absolute;
+                                top: -5vh;
+                                right: -3vw;
+                                width: 10vw;
+                                height: 10vw;
+                            }
+                            .modal-body{
+                                p{
+                                    position: absolute;
+                                    bottom: -35vh;
+                                    left: 0;
+                                    font-family: $Main-font;
+                                    font-weight: 700;
+                                    font-size: 5vw;
+                                    color: $Branco;
+                                    z-index: 99;
+                                }
+                                #IndicatorsUnidade104, #IndicatorsUnidade108, #IndicatorsUnidades203_303_403, #IndicatorsUnidades204_304_404, #IndicatorsUnidades206_306_406{
+                                    width: 100%;
+                                    height: 100%;
+                                    .carousel-indicators{
+                                        height: 2vh;
+                                        align-items: center;
+                                        overflow: hidden;
+                                        button{
+                                            width: 5vw;
+                                            height: 1.5vh;
+                                            margin: 0 1.5vw;
+                                        }
+                                    }
+                                    .carousel-inner{
+                                        left: 2.5%;
+                                        width: 95%;
+                                    }
+                                    button{
+                                        width: 15%;
+                                        height: 75%;
+                                        margin: auto 0;
+                                        .carousel-control-prev-icon, .carousel-control-next-icon{
+                                            width: 15vw;
+                                            height: 10vh;
+                                        }
+                                    }
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #galeria{
+                height: auto;
+                padding-bottom: 10vh;
+                &::before{
+                    width: 115%;
+                }
+                h2{
+                    height: auto;
+                    font-size: 12vw;
+                    padding: 2vh 0;
+                }
+                p{
+                    height: auto;
+                    font-size: 4vw;
+                    line-height: 4vh;
+                    padding: 1vh 0;
+                }
+                #main-carousel{
+                    width: 100%;
+                    height: 30vh;
+                    margin-top: 2.5vh;
+                }
+                #thumbnail-carousel{
+                    margin-top: 3.5vh;
+                    width: 100%;
+                    height: 7.5vh;
+                    .splide__arrows {
+                        .splide__arrow {
+                            background: none;
+                            width: 5vw;
+                            height: 5vw;
+                            svg{
+                                fill: $Branco;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        .splide__arrow--prev{
+                            left: -1vw;
+                        }
+                        .splide__arrow--next{
+                            right: -1vw;
+                        }
+                    }
+                    .splide__track{
+                        width: 85%;
+                        height: 7.5vh;
+                        margin-left: 7.5%;
+                        .splide__list{
+                            width: 100%;
+                            height: 100%;
+                            .splide__slide{
+                                width: 100%;
+                                height: 7.5vh;
+                                opacity: 0.2;
+                                border: none;
+                                img{
+                                    width: 100%;
+                                    height: 7.5vh;
+                                    object-fit: cover;
+                                }
+                            }
+                            .is-active {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            #localizacao{
+                border: none;
+                padding-top: 0;
+                margin-top: -0.5vh;
+                height: auto;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                padding-bottom: 5vh;
+                &::before{
+                    width: 115%;
+                }
+                h2{
+                    width: 100%;
+                    height: auto;
+                    font-size: 10vw;
+                    text-align: center;
+                }
+                h3{
+                    height: auto;
+                    padding: 0 5vw;
+                    font-size: 3.5vw;
+                    margin-top: 2vh;
+                }
+                .map{
+                    margin-top: 5vh;
+                    height: 28vh;
+                    width: 100%;
+                    position: relative;
+                    iframe{
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: solid $Preto 5px;
+                    }
+                    &::before{ display: none; }
+                }
+                .locais_block{
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-top: 5vh;
+                    .local{
+                        margin: 1.5vh 0;
+                        width: 50%;
+                        height: 29vh;
+                        
+                        justify-content: center;
+                        img{
+                            height: auto;
+                            width: 75%;
+                        }
+                        h4{
+                            height: auto;
+                            font-size: 4vw;
+                            margin-top: 1vh;
+                        }
+                        p{
+                            width: 100%;
+                            height: auto;
+                            font-size: 3vw;
+                            padding: 0 2vw;
+                            margin-top: 1.5vh;
+                        }
+                        &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+                            img{ margin-top: unset; }
+                            p{ margin-top: 1.5vh; }
+                        }
+                        &:nth-child(1), &:nth-child(2){
+                            margin-top: unset;
+                        }
+                        &:nth-child(7), &:nth-child(8){
+                            margin-bottom: unset;
+                        }
+                    }
+                }
+            }
+            #entrega{
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                h2{
+                    margin-top: 2vh;
+                    height: 6vh;
+                    font-size: 7vw;
+                    span{
+                        margin-left: 1.5vw;
+                    }
+                }
+                .Relogio{
+                    width: 100%;
+                    height: 10vh;
+                    margin-top: 1vh;
+                    .clock_Num{
+                        width: 20%;
+                        margin: 0;
+                        span{
+                            font-size: 9vw;
+                            color: $Preto;
+                        }
+                        p{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+                .barraProgresso{
+                    width: 100%;
+                    height: auto;
+                    margin-top: 4vh;
+                    .progress-block{
+                        width: 100%;
+                        height: 10vh;
+                        margin-top: 0;
+                        h4, span{ font-size: 3vw; }
+                        span{ justify-content: right; }
+                        .progress-wrap { border-radius: 2vw; }
+                        &:nth-child(1), &:nth-child(2){ margin-top: unset; }
+                    }
+                }
+            }
+            #contato{
+                min-height: 85vh;
+                height: auto;
+                flex-direction: column;
+                padding-bottom: 5vh;
+                #Banner_contato{
+                    width: 140%;
+                    height: 85%;
+                    top: 4%;
+                    left: -6%;
+                    object-fit: cover;
+                }
+                .form_block{
+                    order: 2;
+                    width: 100%;
+                    height: 60vh;
+                    margin-top: 2vh;
+                    margin-bottom: 0;
+                    border-radius: 3vw;
+                    h2{
+                        width: 100%;
+                        height: 10%;
+                        font-size: 7vw;
+                    }
+                    form{
+                        height: 90%;
+                        .BlockBox{
+                            input{
+                                height: 75%;
+                                font-size: 5vw;
+                                padding-left: 5vw;
+                                border-bottom: 2px solid $Branco;
+                            }
+                            p, span{
+                                left: 5vw;
+                                top: 5vw;
+                                font-size: 4vw;
+                            }
+                            &:nth-child(1){ span{ left: 34vw; }}
+                            &:nth-child(2){ span{ left: 17vw; }}
+                        }
+                        .BlockBox input:focus ~ p, input:valid ~ p, input:focus ~ span, input:valid ~ span{
+                            transform:translate(0, -5vh);
+                            font-size: 3vw;
+                        }
+                        .seletor{
+                            #select{
+                                height: 75%;
+                                border-bottom: 2px solid $Branco;
+                                #options_btn {
+                                    font-size: 5vw;
+                                }
+                                #select-button {
+                                    #selected_val{
+                                        font-size: 5vw;
+                                    }
+                                    img, svg{
+                                        right: 2vw;
+                                        width: 6vw;
+                                    }
+                                }
+                            }
+                            #options {
+                                max-height: 50vh;
+                                top: 7vh;
+                                .option {
+                                    span{
+                                        font-size: 4.5vw;
+                                    }
+                                }
+                            }
+                        }
+                        .btn_form{
+                            background: $Branco;
+                            bottom: 2vh;
+                            color: $Preto;
+                        }
+                    }
+                    #msg_form{
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 5vh;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-family: $Main-font;
+                        font-weight: 700;
+                        font-size: 1vw;
+                        text-align: center;
+                    }
+                }
+                h3{
+                    order: 1;
+                    width: 100%;
+                    font-size: 9vw;
+                    text-align: center;
+                    margin-top: 6vh;
+                    margin-bottom: 3vh;
+                    line-height: 4vh;
+                    padding: 0 2.5vw;
+                }
+            }
+            #whats{
+                height: 60vh;
+                padding-bottom: 15vh;
+                &::before{
+                    width: 112%;
+                }
+                h2, h3{
+                    font-size: 8vw;
+                }
+                h3{
+                    font-size: 5.5vw;
+                    font-weight: 500;
+                }
+                .Btn_contato{
+                    background: $Branco;
+                    bottom: 27.5vh;
+                    color: $Preto;
+                }
+            }
+        }
+        footer{
+            min-height: 7vh;
+            height: auto;
+            border-top: 3px solid $Branco;
+            flex-direction: column;
+            padding: 2vh 15vw 4vh;
+            p{
+                font-family: $Main-font;
+                font-weight: 800;
+                font-size: 4vw;
+                color: $Branco;
+                text-align: center;
+            }
+            a{
+                width: 25vw;
+                height: auto;
+                margin-top: 1vh;
+            }
+        }
+    }
+    
 }

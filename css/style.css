@@ -69,6 +69,10 @@ p, h1, h2, h3, h4, h5, h6 {
   --bs-modal-width: auto;
 }
 
+.modal-backdrop {
+  opacity: 0.9 !important;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -179,11 +183,11 @@ body main #banner .banner_Block h2 {
   line-height: 8vh;
   color: #FFFFFF;
   margin-left: 3vw;
-  margin-top: 27vh;
+  margin-top: 20vh;
 }
 body main #banner .banner_Block .Btn_banner {
   background: #313538;
-  bottom: 27vh;
+  bottom: 25vh;
   left: 3vw;
 }
 body main #condominio {
@@ -367,6 +371,7 @@ body main #condominio .cond_block h5 i {
 }
 body main #plantas {
   display: flex;
+  height: 110vh;
   flex-direction: column;
   position: relative;
 }
@@ -498,7 +503,7 @@ body main #plantas .tab-content .tab-block .infos_plantas ul li::before {
 }
 body main #plantas .tab-content .tab-block .btn_plantas {
   background: #313538;
-  bottom: 2vh;
+  bottom: -2vh;
 }
 body main #plantas #Unidade104_Modal .modal-dialog, body main #plantas #Unidade108_Modal .modal-dialog, body main #plantas #Unidades203_303_403_Modal .modal-dialog, body main #plantas #Unidades204_304_404_Modal .modal-dialog, body main #plantas #Unidades206_306_406_Modal .modal-dialog {
   width: 75vw;
@@ -633,9 +638,9 @@ body main #galeria p {
   font-family: "Blacker Sans Pro", sans-serif;
   color: #FFFFFF;
   font-weight: 300;
-  font-size: 0.9vw;
+  font-size: 1.1vw;
   line-height: 3vh;
-  padding: 0.5vh 8vw;
+  padding: 0.5vh 4vw;
 }
 body main #galeria #main-carousel {
   width: 75%;
@@ -791,7 +796,7 @@ body main #localizacao .locais_block .local p {
   font-weight: 300;
   font-size: 0.75vw;
   color: #FFFFFF;
-  padding: 1vh 2.5vw;
+  padding: 1vh 2vw;
   text-align: center;
 }
 body main #entrega {
@@ -1216,4 +1221,613 @@ body footer a img {
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
-/* MOBILE *//*# sourceMappingURL=style.css.map */
+/* MOBILE */
+@media only screen and (max-width: 479px) {
+  body main .whats_link {
+    bottom: 2vh;
+    right: 2vw;
+    width: 14vw;
+    height: 14vw;
+    padding: 3vw;
+  }
+  body main #background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  body main section {
+    width: 90%;
+    height: 100vh;
+  }
+  body main .btn {
+    font-size: 3.5vw;
+    padding: 0.75vh 2.5vw;
+    border-radius: 1.5vw;
+  }
+  body main #banner::before {
+    width: 120%;
+    opacity: 0.25;
+  }
+  body main #banner #Bg_home {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #banner #logo {
+    width: 30vw;
+  }
+  body main #banner .banner_Block {
+    width: 90vw;
+    height: 100vh;
+  }
+  body main #banner .banner_Block h2 {
+    font-size: 7.5vw;
+    line-height: 8vh;
+    margin: 0;
+    margin-top: 25vh;
+    padding: 0 1vw;
+    text-align: center;
+  }
+  body main #banner .banner_Block .Btn_banner {
+    background: #313538;
+    bottom: 20vh;
+    left: auto;
+  }
+  body main #condominio {
+    height: auto;
+    padding-top: 0;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
+  }
+  body main #condominio .menu {
+    display: none;
+  }
+  body main #condominio .block_imgCond {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  body main #condominio .block_imgCond img {
+    border-top-right-radius: 7.5vw;
+    border-bottom-left-radius: 7.5vw;
+    margin-top: 5vh;
+  }
+  body main #condominio .block_imgCond .btn_cond {
+    bottom: -150vh;
+    right: 30%;
+  }
+  body main #condominio .cond_block {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  body main #condominio .cond_block p {
+    margin-top: 2.5vh;
+    font-size: 5vw;
+    text-align: center;
+  }
+  body main #condominio .cond_block #San_Rafael {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+  }
+  body main #condominio .cond_block h3 {
+    font-size: 4.5vw;
+    margin-top: 3vh;
+    text-align: center;
+  }
+  body main #condominio .cond_block h4 {
+    font-size: 5vw;
+    color: #0A0A0A;
+    display: flex;
+    align-items: center;
+    margin-top: 3.5vh;
+  }
+  body main #condominio .cond_block h4 img, body main #condominio .cond_block h4 svg {
+    margin-right: 5vw;
+  }
+  body main #condominio .cond_block ul {
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 2.5vh;
+    padding: 0;
+  }
+  body main #condominio .cond_block ul li {
+    width: 50%;
+    height: 6vh;
+    border-top: 1px solid #313538;
+    font-size: 5vw;
+  }
+  body main #condominio .cond_block ul li:nth-child(1), body main #condominio .cond_block ul li:nth-child(2) {
+    border-top: none;
+    border-bottom: 1px solid #313538;
+  }
+  body main #condominio .cond_block ul li:nth-child(2) {
+    border-right: none;
+  }
+  body main #condominio .cond_block ul li:nth-child(3) {
+    border-left: none;
+  }
+  body main #condominio .cond_block h5 {
+    margin-top: 4vh;
+    padding-right: 0;
+    font-size: 5.5vw;
+    line-height: 3.5vh;
+    text-align: center;
+  }
+  body main #condominio .cond_block h5 b {
+    font-weight: 800;
+  }
+  body main #condominio .cond_block h5 i {
+    font-size: 4.5vw;
+  }
+  body main #plantas {
+    height: auto;
+    padding-bottom: 7.5vh;
+  }
+  body main #plantas h2 {
+    margin-top: 7.5vh;
+    width: 100%;
+    height: auto;
+    font-size: 12vw;
+    padding-bottom: 0;
+  }
+  body main #plantas .nav-pills {
+    height: auto;
+    flex-wrap: wrap;
+    margin-top: 2.5vh;
+  }
+  body main #plantas .nav-pills a {
+    width: 50%;
+    height: 7.5vh;
+    font-size: 4.5vw;
+    text-align: center;
+    margin: 0.5vh 0;
+  }
+  body main #plantas .nav-pills a:first-child {
+    border-left: 1px solid #313538;
+  }
+  body main #plantas .nav-pills a:last-child {
+    border-right: 1px solid #313538;
+  }
+  body main #plantas .tab-content {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  body main #plantas .tab-content .tab-block {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main #plantas .tab-content .tab-block .espaco_planta {
+    width: 100%;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #plantas .tab-content .tab-block .infos_plantas {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  body main #plantas .tab-content .tab-block .infos_plantas h3 {
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  body main #plantas .tab-content .tab-block .infos_plantas ul {
+    height: auto;
+    display: flex;
+    padding-left: 0;
+    margin-top: 1.5vh;
+  }
+  body main #plantas .tab-content .tab-block .infos_plantas ul li {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    padding-left: 0;
+    margin: 0.5vh 0;
+  }
+  body main #plantas .tab-content .tab-block .infos_plantas ul li::before {
+    display: none;
+  }
+  body main #plantas .tab-content .tab-block .btn_plantas {
+    bottom: 0;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog, body main #plantas #Unidade108_Modal .modal-dialog, body main #plantas #Unidades203_303_403_Modal .modal-dialog, body main #plantas #Unidades204_304_404_Modal .modal-dialog, body main #plantas #Unidades206_306_406_Modal .modal-dialog {
+    width: 90vw;
+    height: 55%;
+    margin: 15% auto;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-close, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-close, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-close, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-close, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-close {
+    position: absolute;
+    top: -5vh;
+    right: -3vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body p, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body p {
+    position: absolute;
+    bottom: -35vh;
+    left: 0;
+    font-family: "Blacker Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    color: #FFFFFF;
+    z-index: 99;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 {
+    width: 100%;
+    height: 100%;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators {
+    height: 2vh;
+    align-items: center;
+    overflow: hidden;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-indicators button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-indicators button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-indicators button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-indicators button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-indicators button {
+    width: 5vw;
+    height: 1.5vh;
+    margin: 0 1.5vw;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-inner, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-inner, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-inner, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-inner, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-inner, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-inner, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-inner, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-inner, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-inner, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-inner, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-inner, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-inner, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-inner, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-inner, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-inner, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-inner, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-inner, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-inner, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-inner, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-inner, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 .carousel-inner, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 .carousel-inner, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 .carousel-inner, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 .carousel-inner, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 .carousel-inner {
+    left: 2.5%;
+    width: 95%;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button {
+    width: 15%;
+    height: 75%;
+    margin: auto 0;
+  }
+  body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-prev-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-next-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-prev-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-next-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-prev-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-next-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-prev-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-next-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-prev-icon, body main #plantas #Unidade104_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-next-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-prev-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-next-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-prev-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-next-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-prev-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-next-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-prev-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-next-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-prev-icon, body main #plantas #Unidade108_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-next-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-prev-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-next-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-prev-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-next-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-prev-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-next-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-prev-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-next-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-prev-icon, body main #plantas #Unidades203_303_403_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-next-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-prev-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-next-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-prev-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-next-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-prev-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-next-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-prev-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-next-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-prev-icon, body main #plantas #Unidades204_304_404_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-next-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-prev-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade104 button .carousel-control-next-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-prev-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidade108 button .carousel-control-next-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-prev-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades203_303_403 button .carousel-control-next-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-prev-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades204_304_404 button .carousel-control-next-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-prev-icon, body main #plantas #Unidades206_306_406_Modal .modal-dialog .modal-content .modal-body #IndicatorsUnidades206_306_406 button .carousel-control-next-icon {
+    width: 15vw;
+    height: 10vh;
+  }
+  body main #galeria {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  body main #galeria::before {
+    width: 115%;
+  }
+  body main #galeria h2 {
+    height: auto;
+    font-size: 12vw;
+    padding: 2vh 0;
+  }
+  body main #galeria p {
+    height: auto;
+    font-size: 4vw;
+    line-height: 4vh;
+    padding: 1vh 0;
+  }
+  body main #galeria #main-carousel {
+    width: 100%;
+    height: 30vh;
+    margin-top: 2.5vh;
+  }
+  body main #galeria #thumbnail-carousel {
+    margin-top: 3.5vh;
+    width: 100%;
+    height: 7.5vh;
+  }
+  body main #galeria #thumbnail-carousel .splide__arrows .splide__arrow {
+    background: none;
+    width: 5vw;
+    height: 5vw;
+  }
+  body main #galeria #thumbnail-carousel .splide__arrows .splide__arrow svg {
+    fill: #FFFFFF;
+    width: 100%;
+    height: 100%;
+  }
+  body main #galeria #thumbnail-carousel .splide__arrows .splide__arrow--prev {
+    left: -1vw;
+  }
+  body main #galeria #thumbnail-carousel .splide__arrows .splide__arrow--next {
+    right: -1vw;
+  }
+  body main #galeria #thumbnail-carousel .splide__track {
+    width: 85%;
+    height: 7.5vh;
+    margin-left: 7.5%;
+  }
+  body main #galeria #thumbnail-carousel .splide__track .splide__list {
+    width: 100%;
+    height: 100%;
+  }
+  body main #galeria #thumbnail-carousel .splide__track .splide__list .splide__slide {
+    width: 100%;
+    height: 7.5vh;
+    opacity: 0.2;
+    border: none;
+  }
+  body main #galeria #thumbnail-carousel .splide__track .splide__list .splide__slide img {
+    width: 100%;
+    height: 7.5vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #galeria #thumbnail-carousel .splide__track .splide__list .is-active {
+    opacity: 1;
+  }
+  body main #localizacao {
+    border: none;
+    padding-top: 0;
+    margin-top: -0.5vh;
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding-bottom: 5vh;
+  }
+  body main #localizacao::before {
+    width: 115%;
+  }
+  body main #localizacao h2 {
+    width: 100%;
+    height: auto;
+    font-size: 10vw;
+    text-align: center;
+  }
+  body main #localizacao h3 {
+    height: auto;
+    padding: 0 5vw;
+    font-size: 3.5vw;
+    margin-top: 2vh;
+  }
+  body main #localizacao .map {
+    margin-top: 5vh;
+    height: 28vh;
+    width: 100%;
+    position: relative;
+  }
+  body main #localizacao .map iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid #0A0A0A 5px;
+  }
+  body main #localizacao .map::before {
+    display: none;
+  }
+  body main #localizacao .locais_block {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  body main #localizacao .locais_block .local {
+    margin: 1.5vh 0;
+    width: 50%;
+    height: 29vh;
+    justify-content: center;
+  }
+  body main #localizacao .locais_block .local img {
+    height: auto;
+    width: 75%;
+  }
+  body main #localizacao .locais_block .local h4 {
+    height: auto;
+    font-size: 4vw;
+    margin-top: 1vh;
+  }
+  body main #localizacao .locais_block .local p {
+    width: 100%;
+    height: auto;
+    font-size: 3vw;
+    padding: 0 2vw;
+    margin-top: 1.5vh;
+  }
+  body main #localizacao .locais_block .local:nth-child(5) img, body main #localizacao .locais_block .local:nth-child(6) img, body main #localizacao .locais_block .local:nth-child(7) img, body main #localizacao .locais_block .local:nth-child(8) img {
+    margin-top: unset;
+  }
+  body main #localizacao .locais_block .local:nth-child(5) p, body main #localizacao .locais_block .local:nth-child(6) p, body main #localizacao .locais_block .local:nth-child(7) p, body main #localizacao .locais_block .local:nth-child(8) p {
+    margin-top: 1.5vh;
+  }
+  body main #localizacao .locais_block .local:nth-child(1), body main #localizacao .locais_block .local:nth-child(2) {
+    margin-top: unset;
+  }
+  body main #localizacao .locais_block .local:nth-child(7), body main #localizacao .locais_block .local:nth-child(8) {
+    margin-bottom: unset;
+  }
+  body main #entrega {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  body main #entrega h2 {
+    margin-top: 2vh;
+    height: 6vh;
+    font-size: 7vw;
+  }
+  body main #entrega h2 span {
+    margin-left: 1.5vw;
+  }
+  body main #entrega .Relogio {
+    width: 100%;
+    height: 10vh;
+    margin-top: 1vh;
+  }
+  body main #entrega .Relogio .clock_Num {
+    width: 20%;
+    margin: 0;
+  }
+  body main #entrega .Relogio .clock_Num span {
+    font-size: 9vw;
+    color: #0A0A0A;
+  }
+  body main #entrega .Relogio .clock_Num p {
+    font-size: 3vw;
+  }
+  body main #entrega .barraProgresso {
+    width: 100%;
+    height: auto;
+    margin-top: 4vh;
+  }
+  body main #entrega .barraProgresso .progress-block {
+    width: 100%;
+    height: 10vh;
+    margin-top: 0;
+  }
+  body main #entrega .barraProgresso .progress-block h4, body main #entrega .barraProgresso .progress-block span {
+    font-size: 3vw;
+  }
+  body main #entrega .barraProgresso .progress-block span {
+    justify-content: right;
+  }
+  body main #entrega .barraProgresso .progress-block .progress-wrap {
+    border-radius: 2vw;
+  }
+  body main #entrega .barraProgresso .progress-block:nth-child(1), body main #entrega .barraProgresso .progress-block:nth-child(2) {
+    margin-top: unset;
+  }
+  body main #contato {
+    min-height: 85vh;
+    height: auto;
+    flex-direction: column;
+    padding-bottom: 5vh;
+  }
+  body main #contato #Banner_contato {
+    width: 140%;
+    height: 85%;
+    top: 4%;
+    left: -6%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body main #contato .form_block {
+    order: 2;
+    width: 100%;
+    height: 60vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    border-radius: 3vw;
+  }
+  body main #contato .form_block h2 {
+    width: 100%;
+    height: 10%;
+    font-size: 7vw;
+  }
+  body main #contato .form_block form {
+    height: 90%;
+  }
+  body main #contato .form_block form .BlockBox input {
+    height: 75%;
+    font-size: 5vw;
+    padding-left: 5vw;
+    border-bottom: 2px solid #FFFFFF;
+  }
+  body main #contato .form_block form .BlockBox p, body main #contato .form_block form .BlockBox span {
+    left: 5vw;
+    top: 5vw;
+    font-size: 4vw;
+  }
+  body main #contato .form_block form .BlockBox:nth-child(1) span {
+    left: 34vw;
+  }
+  body main #contato .form_block form .BlockBox:nth-child(2) span {
+    left: 17vw;
+  }
+  body main #contato .form_block form .BlockBox input:focus ~ p, body main #contato .form_block form input:valid ~ p, body main #contato .form_block form input:focus ~ span, body main #contato .form_block form input:valid ~ span {
+    transform: translate(0, -5vh);
+    font-size: 3vw;
+  }
+  body main #contato .form_block form .seletor #select {
+    height: 75%;
+    border-bottom: 2px solid #FFFFFF;
+  }
+  body main #contato .form_block form .seletor #select #options_btn {
+    font-size: 5vw;
+  }
+  body main #contato .form_block form .seletor #select #select-button #selected_val {
+    font-size: 5vw;
+  }
+  body main #contato .form_block form .seletor #select #select-button img, body main #contato .form_block form .seletor #select #select-button svg {
+    right: 2vw;
+    width: 6vw;
+  }
+  body main #contato .form_block form .seletor #options {
+    max-height: 50vh;
+    top: 7vh;
+  }
+  body main #contato .form_block form .seletor #options .option span {
+    font-size: 4.5vw;
+  }
+  body main #contato .form_block form .btn_form {
+    background: #FFFFFF;
+    bottom: 2vh;
+    color: #0A0A0A;
+  }
+  body main #contato .form_block #msg_form {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Blacker Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    text-align: center;
+  }
+  body main #contato h3 {
+    order: 1;
+    width: 100%;
+    font-size: 9vw;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+    line-height: 4vh;
+    padding: 0 2.5vw;
+  }
+  body main #whats {
+    height: 60vh;
+    padding-bottom: 15vh;
+  }
+  body main #whats::before {
+    width: 112%;
+  }
+  body main #whats h2, body main #whats h3 {
+    font-size: 8vw;
+  }
+  body main #whats h3 {
+    font-size: 5.5vw;
+    font-weight: 500;
+  }
+  body main #whats .Btn_contato {
+    background: #FFFFFF;
+    bottom: 27.5vh;
+    color: #0A0A0A;
+  }
+  body footer {
+    min-height: 7vh;
+    height: auto;
+    border-top: 3px solid #FFFFFF;
+    flex-direction: column;
+    padding: 2vh 15vw 4vh;
+  }
+  body footer p {
+    font-family: "Blacker Sans Pro", sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  body footer a {
+    width: 25vw;
+    height: auto;
+    margin-top: 1vh;
+  }
+}/*# sourceMappingURL=style.css.map */
