@@ -26,7 +26,7 @@
 
     $mensagem = 'Tenho interesse na '.$planta;  
 
-    $to = "atendimento@vl7.com.br";
+    $to = "marcio.fb.machado@gmail.com";
     $subject = "Contato cliente ($nome) - Formulario Landing Page San rafael";
     $body = utf8_decode(
         'Nome: ' .$nome. "\r\n"."\r\n".
@@ -35,7 +35,7 @@
         'Mensagem:'. "\r\n"."\r\n". $mensagem
     );
 
-    $header = 'From:atendimento@vl7.com.br'."\r\n"."Reply-To:".$email;
+    $header = 'From:marcio.fb.machado@gmail.com'."\r\n"."Reply-To:".$email;
 
     if(mail($to,$subject,$body,$header)){
         echo ("Formulario enviado com sucesso! Entraremos em contato em breve, obrigado por nos escolher!");
